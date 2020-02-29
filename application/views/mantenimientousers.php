@@ -35,7 +35,6 @@
 
 			<!-- Contenido de la vista es previsto aquí -->
 			<div class="container my-5">
-				<a class="btn btn-info" href="<?php echo base_url(); ?>usuarios_control/eliminar_usuario?id_usuario=<?= $r->id_usuario; ?>" role="button" id="agregar" aria-haspopup="true" aria-expanded="false">Agregar</a>
 				<table id="dataTable" style="text-align: center; border-radius: 40px;" class="table table-hover">
 					<thead>
 						<tr class="thead thead-dark ">
@@ -52,7 +51,7 @@
 							<tr>
 								<td hidden="idusr"><?= $r->idusr; ?></td>
 								<td><?= $r->codigo; ?></td>
-								<td><?= $r->name; ?></td>
+								<td><?= $r->nombre; ?></td>
 								<td>
 									<div class="dropdown show">
 										<a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Acciones</a>

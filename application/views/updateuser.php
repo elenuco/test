@@ -48,7 +48,7 @@
 						</div>
 						<div class="form-group">
 							<label>Contraseña</label>
-							<input type="password" name="password" id="password" class="form-control" placeholder="Password" maxlength="10" minlength="5">
+							<input type="password" name="clave" id="clave" class="form-control" placeholder="Password" maxlength="10" minlength="5">
 						</div>
 						<div class="form-group">
 							<div class="form-group">
