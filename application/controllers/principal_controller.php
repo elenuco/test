@@ -13,13 +13,11 @@ class principal_controller extends CI_Controller
 	$this->load->view('menu',$data);
 	}
 
-public function usuarios() {
+public function users() {
 		$data['css'] = $this->load->view('Layouts/css', NULL, TRUE);
         $data['scripts'] = $this->load->view('Layouts/scripts', NULL, TRUE);
         $data['header'] = $this->load->view('Layouts/header', NULL, TRUE);
-        $data['footer'] = $this->load->view('Layouts/footer', NULL,TRUE);
-       // $usuarios=$this->usuarios_model->mostrar_usuario();
-		$data['usuarios']=$usuarios;
-		$this->load->view('usuarios',$data);
+		$data['footer'] = $this->load->view('Layouts/footer', NULL,TRUE);
+		$this->load->view('mantenimientousers',$data);
 	}
 }
