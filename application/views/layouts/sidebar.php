@@ -24,7 +24,7 @@
 				<li>
 					<a href="javascript:void(0)" aria-expanded="true"><i class="fas fa-user-md"></i><span>Médicos</span></a>
 					<ul class="collapse">
-						<li> <a href="<?php echo base_url(); ?>control_medico">Registro de médicos</a> </li>
+						<li> <a href="<?php echo base_url(); ?>mantenimientousers">Registro de médicos</a> </li>
 						<li> <a href="<?php echo base_url(); ?>control_medico/nuevo">Nuevo médico</a> </li>
 						<li> <a href="<?php echo base_url(); ?>control_medico/nueva_profesion">Nueva Profesión</a> </li>
 					</ul>
