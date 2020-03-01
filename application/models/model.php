@@ -23,8 +23,8 @@ class model extends CI_Model{
 		$this->db->insert('roles');
 	}
 	
-	public function obtener_usuario ($id_usuario){
-		$this->db->where('idusr',$id_usuario);
+	public function obtener_usuario ($idusr){
+		$this->db->where('idusr',$idusr);
 		$usuarios=$this->db->get('usuarios');
 		return $usuarios->result();
 	}
@@ -36,7 +36,7 @@ class model extends CI_Model{
 	}
 
 	public function actualizar_usuario ($data){
-		$this->db->set('username',$data['username']);
+		$this->db->set('codigo',$data['codigo']);
 		$this->db->set('password',sha1(md5($data['password'])));
 		$this->db->set('email',$data['email']);
 		$this->db->set('rol_id',$data['rol_id']);

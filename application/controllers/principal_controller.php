@@ -29,4 +29,16 @@ public function users() {
 		$data['users']=$users;
 		$this->load->view('mantenimientousers',$data);
 	}
+public function updatedata(){
+	    $data['css'] = $this->load->view('Layouts/css', NULL, TRUE);
+        $data['scripts'] = $this->load->view('Layouts/scripts', NULL, TRUE);
+        $data['header'] = $this->load->view('Layouts/header', NULL, TRUE);
+		$data['footer'] = $this->load->view('Layouts/footer', NULL,TRUE);
+}
+public function acccionusuario(){
+	    $data['css'] = $this->load->view('Layouts/css', NULL, TRUE);
+        $data['scripts'] = $this->load->view('Layouts/scripts', NULL, TRUE);
+        $data['header'] = $this->load->view('Layouts/header', NULL, TRUE);
+		$data['footer'] = $this->load->view('Layouts/footer', NULL,TRUE);
+		$data['idusr']=$this->model->obtener_usuario($REQUEST["idusr"]);
 }
