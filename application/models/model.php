@@ -22,8 +22,7 @@ class model extends CI_Model{
 		$this->db->set('rol',$data['rol']);
 		$this->db->insert('roles');
 	}
-	
-	public function obtener_usuario ($idusr){
+		public function obtener_usuario ($idusr){
 		$this->db->where('idusr',$idusr);
 		$usuarios=$this->db->get('usuarios');
 		return $usuarios->result();
@@ -44,7 +43,7 @@ class model extends CI_Model{
 		$this->db->update('usuarios');
 	}
 
-	public function actualizar_rol (){
+	public function actualizar_rol ($data){
 		$this->db->set('rol',$data['rol']);
 		$this->db->update('rol',$data);
 	}
@@ -56,4 +55,5 @@ class model extends CI_Model{
 
 	
 }
+
 ?>

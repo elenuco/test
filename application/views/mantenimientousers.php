@@ -58,7 +58,7 @@
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 											<a href="<?php echo base_url(); ?>usuarios_control/eliminar_users?idusr=<?= $r->idusr; ?>" class="dropdown-item btn btn-info">Eliminar</a>
 
-											<a href="<?php echo base_url(); ?>usuarios_control/accion_users		=<?= $r->idusr; ?>" class="dropdown-item btn btn-secondary">
+											<a href="<?php echo base_url(); ?>usuarios_control/accion_users?idusr=<?= $r->idusr; ?>" class="dropdown-item btn btn-secondary">
 												Editar
 											</a>
 										</div>

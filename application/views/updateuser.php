@@ -33,7 +33,7 @@
 
 			<!-- Contenido de la vista es previsto aquí -->
 			<!-- Formulario -->
-			<form method="post" style="opacity: 1.0; border-radius: 2px; padding-top: 2px;" action="<?php echo base_url(); ?>usuarios_control/guardar_usuario">
+			<form method="post" style="opacity: 1.0; border-radius: 2px; padding-top: 2px;" action="<?php echo base_url(); ?>principal_controller/updateuser">
 
 				<div class="row">
 					<div class="col-2"></div>
