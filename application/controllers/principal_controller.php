@@ -45,5 +45,11 @@ public function accion_users(){
 		$data['idusr']=$this->model->obtener_usuario($_REQUEST["idusr"]);
 		$this->load->view('updateuser',$data);
 }
-
+public function newuser(){
+	$data['css'] = $this->load->view('Layouts/css', NULL, TRUE);
+        $data['scripts'] = $this->load->view('Layouts/scripts', NULL, TRUE);
+        $data['header'] = $this->load->view('Layouts/header', NULL, TRUE);
+		$data['footer'] = $this->load->view('Layouts/footer', NULL,TRUE);
+		$this->load->view('agregarusuario', $data);
+}
 }

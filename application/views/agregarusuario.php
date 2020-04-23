@@ -33,7 +33,7 @@
 
 			<!-- Contenido de la vista es previsto aquí -->
 			<!-- Formulario -->
-			<form method="post" style="opacity: 1.0; border-radius: 2px; padding-top: 2px;" action="<?php echo base_url(); ?>usuarios_control/guardar_usuario">
+			<form method="post" style="opacity: 1.0; border-radius: 2px; padding-top: 2px;" action="<?php echo base_url(); ?>principal_controller/guardar_usuario">
 
 				<div class="row">
 					<div class="col-2"></div>
@@ -62,7 +62,7 @@
 							<br>
 
 							<div class="col-lg-4">
-								<a type="buttom" class="btn btn-danger btn-block" href="<?php echo base_url(); ?>usuarios_control">Cancelar</a>
+								<a type="buttom" class="btn btn-danger btn-block" href="<?php echo base_url(); ?>principal_controller">Cancelar</a>
 							</div>
 						</div>
 

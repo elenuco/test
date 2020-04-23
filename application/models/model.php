@@ -28,9 +28,9 @@ class model extends CI_Model{
 		return $usuarios->result();
 	}
 
-	public function obtener_opciones ($id_rol){
-		$this->db->where('id_rol',$id_rol);
-		$roles=$this->db->get('roles');
+	public function obtener_opciones ($idopc){
+		$this->db->where('idopc',$idopc);
+		$roles=$this->db->get('opciones_menu');
 		return $roles->result();
 	}
 

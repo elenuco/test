@@ -37,6 +37,11 @@
 			<div class="container my-5">
 				<table id="dataTable" style="text-align: center; border-radius: 40px;" class="table table-hover">
 					<thead>
+						<tr class="thead thead-dark"> 
+							<th></th>
+							<th></th>
+						<th><a type="buttom" class="btn btn-danger btn-block" href="<?php echo base_url(); ?>principal_controller/newuser">agregar usuario</a></li></th>
+						</tr>
 						<tr class="thead thead-dark ">
 							<th hidden=""></th>
 							<th scope="col">CODIGO</th>
